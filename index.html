@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./assets/Logo_Mighty_ducks-01.ico">
+    <link href="./assets/style.css" rel="stylesheet">
+    <title>Mighty Ducks Hockey League</title>
 </head>
 
 <body>
     <header>
-        <figure>
+        <img class="banner" src="./assets/design1_image1.jpg" alt="logo" width="100">
+        <h1>Mighty Ducks Hockey League</h1>
+        <figure class="logo">
             <img src="./assets/Logo_Mighty_ducks-01.ico" alt="logo" width="100">
         </figure>
-        <h1>Mighty Ducks Hockey League</h1>
+
     </header>
     <nav>
-        <a href="#">Home</a>
-        <span>|</span>
-        <a href="./about.html">About MDHL</a>
-        <span>|</span>
-        <a href="./contact.html">contact</a>
+        <ul>
+            <li>
+                <a class="actual-page" href="#">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About MDHL</a>
+            </li>
+            <li>
+                <a href="./contact.html">contact</a>
+            </li>
+        </ul>
     </nav>
     <main>
-        <figure>
-            <img src="./assets/hockey_1.jpg" alt="hockey player" width="100">
-        </figure>
         <section>
             <h2>Upcoming Events</h2>
             <h3>August 4</h3>
@@ -35,6 +42,9 @@
             <h3>September 1</h3>
             <p>First Game of the Season (Check Game Schedule for details)</p>
         </section>
+        <figure class="gallery">
+            <img src="./assets/hockey_1.jpg" alt="hockey player" width="300">
+        </figure>
     </main>
 </body>
 

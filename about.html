@@ -6,27 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/Logo_Mighty_ducks-01.ico">
+    <link href="./assets/style.css" rel="stylesheet">
     <title>Mighty Ducks Hockey League</title>
 </head>
 
 <body>
     <header>
-        <figure>
+        <img class="banner" src="./assets/design1_image1.jpg" alt="logo" width="100">
+        <h1>Mighty Ducks Hockey League</h1>
+        <figure class="logo">
             <img src="./assets/Logo_Mighty_ducks-01.ico" alt="logo" width="100">
         </figure>
-        <h1>Mighty Ducks Hockey League</h1>
+
     </header>
     <nav>
-        <a href="./index.html">Home</a>
-        <span>|</span>
-        <a href="#">About MDHL</a>
-        <span>|</span>
-        <a href="./contact.html">contact</a>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="actual-page" href="#">About MDHL</a>
+            </li>
+            <li>
+                <a href="./contact.html">contact</a>
+            </li>
+        </ul>
     </nav>
     <main>
-        <figure>
-            <img src="./assets/hockey_2.jpg" alt="hockey player" width="100">
-        </figure>
         <section>
             <h2>Mision</h2>
             <p>To support young athletes living Chicago's northside neighborhood, who have an interest in
@@ -42,6 +48,9 @@
                 neighborhood. MDHL ran by o small full-time staff, and relies on the generous volunteer time of
                 parents and previous league members</p>
         </section>
+        <figure class="gallery">
+            <img src="./assets/hockey_2.jpg" alt="hockey player" width="300">
+        </figure>
     </main>
 </body>
 
