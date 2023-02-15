@@ -2,67 +2,157 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Comic Sans MS",
+        "Comic Sans",
+        cursive;
 }
 
-body {
-    padding: 0;
-    top: 0;
-}
-
-
-li {
-    margin-bottom: 5rem;
-}
-
-.actual-page {
-    text-decoration: none;
-    font-weight: 700;
+body,
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .banner {
-    display: block;
-    width: 100%;
-    height: 250px;
+    display: flex;
+    height: 15rem;
+}
+
+.banner-container {
+    display: flex;
+}
+
+.bannerSpaces {
+    display: flex;
+    height: 15rem;
+    background-color: rgb(255, 228, 196);
+    flex-grow: 3;
 }
 
 h1 {
-    position: absolute;
-    top: 0.5rem;
-    left: 1rem;
+    display: flex;
     color: white;
+    background-color: blue;
+    padding: 0.5rem;
 }
 
 h2 {
-    display: block;
-    top: 12rem;
-    background-color: blue;
-    color: white;
-    width: 100vw;
+    display: flex;
+    color: black;
     margin-bottom: 3rem;
-    text-align: center;
+    align-self: center;
+}
+
+.logo-title {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
 }
 
 .logo {
-    position: absolute;
-    right: 10rem;
-    top: 14.5rem;
+    display: flex;
+    height: 3rem;
+    background-color: blue;
 }
 
 nav {
-    position: absolute;
-    top: 20rem;
-}
-
-section>h3,
-section>p {
-    position: relative;
-    left: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    padding: 0.2rem;
     margin-bottom: 1rem;
 }
 
+nav>a {
+    background-color: blue;
+    border-color: white;
+    color: white;
+    height: 2.2rem;
+    width: 9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.1rem;
+    border-radius: 1rem;
+    padding: 1px;
+    padding-top: 3px;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section>h3,
+section>p,
 .gallery {
-    position: relative;
-    top: 2rem;
-    left: 10rem;
+    align-self: center;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery {
+    display: flex;
+}
+
+main,
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.actual-page {
+    background-color: bisque;
+    color: black;
+}
+
+/*TABLE*/
+table,
+th,
+td,
+tr {
+    border: 0.2rem solid;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.2rem;
+    text-align: center;
+
+}
+
+table {
+    width: 90%;
+    align-self: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+/*LISTS*/
+ol,
+ul {
+    align-self: center;
+    width: 90%;
+    list-style-position: inside;
+}
+
+ol>li>ol {
+    list-style: lower-latin;
+    list-style-position: inside;
+    margin-left: 2rem;
 }
