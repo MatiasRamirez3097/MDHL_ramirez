@@ -5,15 +5,81 @@
     font-family: "Comic Sans MS",
         "Comic Sans",
         cursive;
+    background-color: transparent;
 }
 
 body,
-header {
+header,
+fieldset {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+body {
+    background-color: rgb(211, 191, 191);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+div.form-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+}
+
+.form-div>* {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    margin-right: 1rem;
+}
+
+@media(max-width: 680px) {
+    .form-div>* {
+        width: 90%;
+    }
+}
+
+.form-div>p {
+    width: 100%;
+    font-weight: bolder;
+}
+
+form>input {
+    background-color: black;
+    color: white;
+    width: 50%;
+    align-self: center;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+label>input {
+    border-radius: 0.5rem;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+label>input:focus {
+    border-color: cyan;
+    background-color: white;
+}
+
+/* BANNER */
 .banner {
     display: flex;
     height: 15rem;
@@ -30,6 +96,9 @@ header {
     flex-grow: 3;
 }
 
+/*---------------*/
+
+/* TITLES */
 h1 {
     display: flex;
     color: white;
@@ -44,6 +113,9 @@ h2 {
     align-self: center;
 }
 
+/*-------------*/
+
+/* LOGO */
 .logo-title {
     flex-wrap: wrap;
     display: flex;
@@ -53,10 +125,12 @@ h2 {
 
 .logo {
     display: flex;
-    height: 3rem;
+    height: 4.5rem;
     background-color: blue;
 }
 
+/* ----------------- */
+/* NAV */
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -82,17 +156,17 @@ nav>a {
     text-decoration: none;
 }
 
+/* --------- */
 section>h3,
 section>p,
-.gallery {
+.gallery,
+section>iframe,
+section>h4 {
+    display: flex;
     align-self: center;
     width: 90%;
     margin-bottom: 1rem;
     margin-top: 1rem;
-}
-
-.gallery {
-    display: flex;
 }
 
 main,
